@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body{
+    background-color: aliceblue;
+    color: black;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 14%;
+    transition: all .50s ease;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: #FCBA0A;
+    font-size: 33px;
+}
+.logo i{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+.navlist li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navlist li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: #FCBA0A;
+    visibility: hidden;
+    transition: visibility 0s ease, width 0.3s ease;
+}
+
+.navlist li a:hover::after {
+    visibility: visible; 
+    width: 100%;
+}
+.nav-button p{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 30px;
+}
+.nav-button{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: #FFDF86;
+    border-radius: 3rem;
+    transition: all 0.50s ease;
+    cursor: pointer;
+}
+.nav-button:hover {
+    transform: scale(1.05);
+}
+
+section{
+    padding: 70px 14% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img{
+    width: 100%;
+    height: auto;
+}
+.home-text h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    white-space: nowrap;
+}
+span{
+    color: #FCBA0A;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #FFDF86;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all .50s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+
+header.sticky{
+    padding: 10px 14%;
+    background: aliceblue;
+}
+
+.container{
+    padding: 30px 14% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    text-align: center;
+}
+.container-box{
+    padding: 35px;
+    background: #EEEEEE;
+    border-radius: 3rem;
+}
+.container-box img{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+.about-img img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+.about-text h2{
+    text-decoration: underline #FCBA0A;
+    font-size: 2.6rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+.about-text p{
+    color: #808080;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+.middle-text{
+    text-align: center;
+}
+.middle-text h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FCBA0A;
+}
+.middle-text h2{
+    font-size: 2.6rem;
+}
+
+.review-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.box{
+    padding: 35px;
+    background: #EEEEEE;
+    border-radius: 3rem;
+} 
+.box p{
+    color: #808080;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+.in-box{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.bx-img img {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.bxx-text h4{
+    margin: 3px 0;
+    font-size: 18px;
+}
+.bxx-text h5 {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.ratings i{
+    font-size: 18px;
+    margin-right: 5px;
+}
