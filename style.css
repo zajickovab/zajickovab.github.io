@@ -44,14 +44,13 @@ header{
     color: black;
     font-size: 1.1rem;
     font-weight: 600;
-    margin: 0 30px;
+    margin: 0 20px;
     transition: all .50s ease;
 }
 .navlist li a {
     position: relative;
     transition: color 0.3s ease;
 }
-
 .navlist li a::after {
     content: '';
     position: absolute;
@@ -68,7 +67,7 @@ header{
     visibility: visible; 
     width: 100%;
 }
-.nav-button p{
+.nav-button a{
     color: black;
     font-size: 1.1rem;
     font-weight: 600;
@@ -87,6 +86,23 @@ header{
     transform: scale(1.05);
 }
 
+.nav-icons{
+    color: black;
+    vertical-align: middle;
+    font-size: 32px;
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all .50s ease;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-icons i:hover{
+    color: #FCBA0A;
+    transform: scale(1.1);
+}
+
 section{
     padding: 70px 14% 60px;
 }
@@ -99,9 +115,9 @@ section{
     align-items: center;
     gap: 2rem;
 }
-.home-img{
-    width: 100%;
-    height: auto;
+.home-img img{
+    width: auto;
+    height: 100%;
 }
 .home-text h1{
     font-size: 4.5rem;
@@ -179,14 +195,54 @@ header.sticky{
 .middle-text{
     text-align: center;
 }
-.middle-text h4{
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #FCBA0A;
-}
 .middle-text h2{
     font-size: 2.6rem;
+    text-decoration: underline #FCBA0A;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.row{
+    position: relative;
+    padding: 10px 35px 40px;
+    background: #EEEEEE;
+    border-radius: 3rem;
+}
+.row img{
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    display: block;
+}
+.row h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.row p{
+    color: #808080;
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 1.1rem;
+}
+.in-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.in-text .price h6{
+    font-size: 17px;
+    color: #FCBA0A;
+    font-weight: 600;
 }
 
 .review-content{
@@ -233,4 +289,99 @@ header.sticky{
 .ratings i{
     font-size: 18px;
     margin-right: 5px;
+}
+
+@media (max-width: 1545px){
+    header{
+        padding: 22px 4%;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 14px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 50px 4% 40px;
+        transition: .2s;
+    }
+    .container{
+        padding: 30px 4% 50px;
+    }
+}
+
+@media (max-width: 1180px){
+    .home{
+        height: 85vh;
+    }
+}
+
+@media (max-width: 1060px){
+    #menu-icon{
+        display: initial;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: #EEEEEE;
+        transition: all .50s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-left: 2.5px solid #FCBA0A;
+    }
+    .navlist li a::after {
+        display: none;
+    }
+    .navlist li a:hover{
+        color: #FCBA0A;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+@media (max-width: 1045){
+    .home-img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+    .about-img img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+    .home{
+        height: 70vh;
+    }
+}
+@media (max-width: 860px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 118vh;
+    }
+    .home-text{
+        padding-top: 60px;
+    }
+    .home-img{
+        text-align: center;
+    }
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+    }
+}
+@media (max-width: 440px){
+    .home{
+        height: 110vh;
+        gap: 0.1rem;
+    }
 }
