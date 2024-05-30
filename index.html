@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restaurant website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="homepagecss.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     
     <script src="https://kit.fontawesome.com/200ffcf162.js" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +24,7 @@
         <ul class="navlist">
             <li><a href="#home">home</a></li>
             <li><a href="#about">about us</a></li>
-            <li><a href="#shop">menu</a></li>
+            <li><a href="#menu">menu</a></li>
             <li><a href="#review">reviews</a></li>
             <li><a href="#faq">faq</a></li>
             <li><a href="#contact">contacts</a></li>
@@ -31,203 +33,278 @@
         <div class="nav-button">
             <a href="#reservations">reservations</a>
         </div>
-        <div class="nav-icons" class="bx bx-menu" id="menu-icon">
+        <div class="nav-icons bx bx-menu" id="menu-icon">
             <a><i class="fa-solid fa-bars"></i></a>
         </div>
     </header>
 
-
     <section class="home" id="home">
         <div class="home-text">
             <h1><span>Eat &</span> <br> enjoy the <br> taste!</h1>
-            <a href="#shop" class="btn">explore menu</a>
+            <a href="#menu" class="btn">explore menu</a>
         </div>
 
         <div class="home-img">
-            <img src="webphoto1.png">
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="container-box">
-            <img src="clock-regular.svg">
-            <h3>11:00 am - 9:00 pm</h3>
-        </div>
-
-        <div class="container-box">
-            <img src="accessible-icon.svg">
-            <h3>Accesible</h3>
-        </div>
-
-        <div class="container-box">
-            <img src="bag-shopping-solid.svg">
-            <h3>Takeaway</h3>
-        </div>
-
-        <div class="container-box">
-            <img src="car-solid.svg">
-            <h3>Free parking</h3>
+            <img src="images/webphoto1.png">
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="webphoto2.jpg">
+            <img src="images/webphoto2.jpg">
         </div>
 
         <div class="about-text">
-            <h2>about us</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quo rem dolore maxime, temporibus dolores vitae eum consectetur deserunt laboriosam voluptatibus explicabo quibusdam perferendis distinctio aliquid tempora corporis in ducimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos mollitia inventore numquam velit aspernatur rerum architecto laudantium laborum similique magni odio totam tempore maxime quis aut nostrum deleniti, vero iste.</p>
+            <div class="middle-text">
+                <h2>About us</h2>
+            </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quo rem dolore maxime, temporibus dolores vitae eum consectetur deserunt laboriosam voluptatibus explicabo quibusdam perferendis distinctio aliquid tempora corporis in ducimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos mollitia inventore numquam velit aspernatur rerum architecto laudantium.</p>
         </div>
     </section>
 
-    <section class="shop" id="shop">
+    <section class="menu" id="menu">
         <div class="middle-text">
-            <h2>menu</h2>
+            <h2>Menu</h2>
         </div>
-
-        <div class="shop-content">
-            <div class="row">
-                <img src="menuphoto.jpg">
-                <h3>moc dobry jidlo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-text">
-                    <div class="price">
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="menuphoto.jpg">
-                <h3>moc dobry jidlo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-text">
-                    <div class="price">
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="menuphoto.jpg">
-                <h3>moc dobry jidlo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-text">
-                    <div class="price">
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
+        <div class="foodb">
+            <ul class="foodl">
+                <li><a href="#" class="category-link" data-category="appetizers">appetizers</a></li>
+                <li><a href="#" class="category-link" data-category="main">main dishes</a></li>
+                <li><a href="#" class="category-link" data-category="drinks">drinks</a></li>
+            </ul>
+            
+        </div>
+        <div class="arrow-area">
+        <div class="arrow" id="marrow">
+            <a><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        </div>
+    
+        <!-- Obsah položek menu bude generován pomocí JavaScriptu -->
+    
+        <div class="category" id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="menu-content">
+                <!-- Obsah bude generován JavaScriptem -->
             </div>
         </div>
-        <div class="shop-content">
-            <div class="row">
-                <img src="menuphoto.jpg">
-                <h3>moc dobry jidlo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-text">
-                    <div class="price">
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
+        
+        <div class="category" id="main">
+            <h2>Main dishes</h2>
+            <div class="menu-content">
+                <!-- Obsah bude generován JavaScriptem -->
             </div>
-
-            <div class="row">
-                <img src="menuphoto.jpg">
-                <h3>moc dobry jidlo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-text">
-                    <div class="price">
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
+        </div>
+        
+        <div class="category" id="drinks">
+            <h2>Drinks</h2>
+            <div class="menu-content">
+                <!-- Obsah bude generován JavaScriptem -->
             </div>
-
-            <div class="row">
-                <img src="menuphoto.jpg">
-                <h3>moc dobry jidlo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-text">
-                    <div class="price">
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
+        </div>
+        
+        <div class="daily" id="daily-menu">
+            <h2>Daily menu</h2>
+            <p class="date" id="current-date"></p>
+            <div class="menu-content">
+                <!-- Obsah bude generován JavaScriptem -->
             </div>
         </div>
     </section>
 
     <section class="review" id="review">
         <div class="middle-text">
-            <h2>clients reviews</h2>
+            <h2>Clients reviews</h2>
         </div>
 
-        <div class="review-content">
+        <div class="wrapper">
             <div class="box">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-box">
-                    <div class="bx-img">
-                        <img src="photo-rv1.jpg">
-                    </div>
-                    <div class="bxx-text">
-                        <h4>necuma zmiz</h4>
-                        <h5>food vlogger</h5>
-                        <div class="ratings">
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                        </div>
-                    </div>
+              <i class="fas fa-quote-left quote"></i>
+              <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+              <div class="content">
+                <div class="info">
+                  <div class="name">Full name</div>
+                  <div class="job">food blogger</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
                 </div>
+                <div class="image">
+                  <img src="images/photo-rv1.jpg" alt="">
+                </div>
+              </div>
             </div>
-
             <div class="box">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-box">
-                    <div class="bx-img">
-                        <img src="photo-rv2.jpg">
-                    </div>
-                    <div class="bxx-text">
-                        <h4>necuma zmiz</h4>
-                        <h5>food vlogger</h5>
-                        <div class="ratings">
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                        </div>
-                    </div>
+              <i class="fas fa-quote-left quote"></i>
+              <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+              <div class="content">
+                <div class="info">
+                  <div class="name">Full name</div>
+                  <div class="job">food blogger</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
                 </div>
+                <div class="image">
+                  <img src="images/photo-rv2.jpg" alt="">
+                </div>
+              </div>
             </div>
-
             <div class="box">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <div class="in-box">
-                    <div class="bx-img">
-                        <img src="photo-rv3.jpg">
-                    </div>
-                    <div class="bxx-text">
-                        <h4>necuma zmiz</h4>
-                        <h5>food vlogger</h5>
-                        <div class="ratings">
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                            <a href="#"><i class="fa-solid fa-star" style="color: #fcba0a;"></i></a>
-                        </div>
-                    </div>
+              <i class="fas fa-quote-left  quote"></i>
+              <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+              <div class="content">
+                <div class="info">
+                  <div class="name">Full name</div>
+                  <div class="job">food blogger</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
                 </div>
+                <div class="image">
+                  <img src="images/photo-rv3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="middle-text">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion">
+            <div class="accordion-content">
+                <label>
+                    <span class="title">What do you mean by Accordion?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+    
+                <p class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+                </p>
+            </div>
+    
+            <div class="accordion-content">
+                <label>
+                    <span class="title">What do you mean by Accordion?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+    
+                <p class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+                </p>
+            </div>
+            <div class="accordion-content">
+                <label>
+                    <span class="title">What do you mean by Accordion?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+    
+                <p class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto neque, sed inventore illum ut quis ducimus deleniti temporibus maiores? At nisi sed pariatur cupiditate quidem quod adipisci aut, eos quis minima voluptates non veniam ipsam quasi architecto ducimus error eum id ab, suscipit doloribus, ut accusantium consequuntur voluptate! Unde, hic sed rerum officia totam id libero officiis nihil rem sequi porro labore praesentium repudiandae a blanditiis molestias nisi beatae natus! Ea, ut voluptates, natus harum nesciunt odio hic eveniet reprehenderit veritatis, possimus tempora magni soluta eaque quidem neque maxime nostrum sapiente commodi? Earum ex cumque cupiditate dicta, tempora temporibus quaerat.
+                </p>
+            </div>
+            <div class="accordion-content">
+                <label>
+                    <span class="title">What do you mean by Accordion?</span>
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+    
+                <p class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim numquam voluptatem?
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="faq"></section>
+    <section class="reservations" id="reservations">
+        <div class="middle-text">
+            <h2>Reservations</h2>
+        </div>
 
-    <section class="contact"></section>
+        <div class="form">
+            <form id="reservation-form" action="#" method="post">
+              <div class="form-group">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="datetime">Date and time:</label>
+                <input type="datetime-local" id="datetime" name="datetime" required>
+              </div>
+              <div class="form-group">
+                <label for="people">Number of people:</label>
+                <input type="number" id="people" name="people" required max="10" min="1">
+                <span class="note">(If you want a reservation for more than 10 people, call us.)</span>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="notes">Notes:</label>
+                <input id="notes" name="notes" type="text" required>
+            </div>
+              <button class="form-btn" type="submit">Send</button>
+            </form>
+          </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="middle-text">
+            <h2>Contacts</h2>
+        </div>
+
+        <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details" id="address">
+                    <p class="topic"><i class="fas fa-map-marker-alt" style="color: #fcba0a;"></i>Address: Lorem Ipsum</p>
+                </div>
+                <div class="phone details" id="phone">
+                    <p class="topic"><i class="fas fa-phone-alt" style="color: #fcba0a;"></i>Phone: 123-456-789</p>
+                </div>
+                <div class="email details" id="email">
+                    <p class="topic"><i class="fas fa-envelope" style="color: #fcba0a;"></i>Email: lorem@ipsum.com</p>
+                </div>
+                <div class="hours details" id="hours">
+                    <p class="topic"><i class="fas fa-clock" style="color: #fcba0a;"></i>Open hours: 11:00 - 21:00</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.8022024172965!2d14.538212551351739!3d50.05253652373608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9263cee39691%3A0x1372193f83adc6fe!2sWeilova%204%2C%20102%2000%20Praha%2015!5e0!3m2!1scs!2scz!4v1652278552950!5m2!1scs!2scz" allowfullscreen="" loading="auto" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Map Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+  
+<footer>
+    Copyright &copy; 2024 Barbora Zajíčková
+</footer>
+
 
     <script src="main.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
