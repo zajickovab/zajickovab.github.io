@@ -502,6 +502,12 @@ color: #FCBA0A;
 font-weight: 600;
 }
 
+@media (max-width: 800px) {
+    .row p{
+      font-size: 1rem;
+    }
+ }
+
 /*reviews section*/
 .review{
     display: grid;
@@ -583,6 +589,11 @@ font-weight: 600;
       width: 100%;
     }
   }
+  @media (max-width: 800px) {
+    .box p{
+      font-size: 1rem;
+    }
+ }
 
   /*faq section*/
   .accordion{
@@ -624,12 +635,17 @@ font-weight: 600;
 }
 .accordion-content .description{
     height: 0;
-    font-size: 14px;
+    font-size: 1.1rem;
     color: #808080;
     font-weight: 400;
     padding: 0 15px;
     transition: all 0.5s linear;
 }
+@media (max-width: 800px) {
+    .accordion-content .description{
+      font-size: 1rem;
+    }
+ }
 
 /*reservation section*/
 .form {
