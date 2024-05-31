@@ -91,15 +91,15 @@ function generateMenu(category, items) {
         row.classList.add('row');
 
         const image = document.createElement('img');
-        image.src = item.image; // URL obrázku z JSON dat
+        image.src = item.image;
         row.appendChild(image);
 
         const name = document.createElement('h3');
-        name.textContent = item.name; // Název položky z JSON dat
+        name.textContent = item.name;
         row.appendChild(name);
 
         const description = document.createElement('p');
-        description.textContent = item.description; // Popis položky z JSON dat
+        description.textContent = item.description;
         row.appendChild(description);
 
         const inText = document.createElement('div');
@@ -109,7 +109,7 @@ function generateMenu(category, items) {
         price.classList.add('price');
 
         const priceTag = document.createElement('h6');
-        priceTag.textContent = '$' + item.price.toFixed(2); // Cena položky z JSON dat
+        priceTag.textContent = '$' + item.price.toFixed(2); 
         price.appendChild(priceTag);
 
         inText.appendChild(price);
@@ -119,7 +119,6 @@ function generateMenu(category, items) {
     });
 }
 
-// Volání funkce pro každou kategorii menu s odpovídajícími daty z JSON souboru
 generateMenu('appetizers', menuData.appetizers);
 generateMenu('main', menuData.main);
 generateMenu('drinks', menuData.drinks);

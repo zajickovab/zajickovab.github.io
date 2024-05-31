@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const categoryLinks = document.querySelectorAll('.category-link');
             const categories = document.querySelectorAll('.category');
 
-            // Při načtení stránky zobrazit pouze kategorii 'appetizers'
             categories.forEach(category => {
                 category.style.display = (category.id === 'appetizers') ? 'block' : 'none';
             });
@@ -71,11 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Získání aktuálního data
     const currentDate = new Date();
     const day = currentDate.getDate();
-    const month = currentDate.getMonth() + 1; // Měsíce jsou indexované od 0, proto přidáváme 1
+    const month = currentDate.getMonth() + 1; 
     const year = currentDate.getFullYear();
     const formattedDate = `${day}.${month}.${year}`;
     
-    // Zobrazení aktuálního data ve "Daily Menu"
+    // Zobrazení aktuálního data 
     const dateElement = document.getElementById('current-date');
     dateElement.textContent = `Menu for ${formattedDate}`;
     });
@@ -85,21 +84,16 @@ document.addEventListener('DOMContentLoaded', function() {
     var currentDate = new Date();
     var currentHour = currentDate.getHours();
     
-    // Get the element where the current date will be displayed
+    
     var currentDateElement = document.getElementById("current-date");
     
-    // Display the current date
     currentDateElement.textContent = "Today's Date: " + currentDate.toDateString();
     
-    // Get the element representing the daily menu section
     var dailyMenuSection = document.getElementById("daily-menu");
     
-    // Check if the current time is between 10:00 and 14:00
     if (currentHour >= 11 && currentHour < 14) {
-    // Show the daily menu section
     dailyMenuSection.style.display = "block";
     } else {
-    // Hide the daily menu section
     dailyMenuSection.style.display = "none";
     }
     });
@@ -117,13 +111,13 @@ accordionContent.forEach((item, index) => {
 
         let description = item.querySelector(".description");
         if(item.classList.contains("open")){
-            description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+            description.style.height = `${description.scrollHeight}px`; 
             item.querySelector("i").classList.replace("fa-plus", "fa-minus");
         }else{
             description.style.height = "0px";
             item.querySelector("i").classList.replace("fa-minus", "fa-plus");
         }
-        removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+        removeOpen(index); 
     })
 })
 
@@ -143,5 +137,5 @@ function removeOpen(index1){
 document.getElementById('reservation-form').addEventListener('submit', function(event) {
     event.preventDefault();
     alert('Formulář byl úspěšně odeslán!');
-    this.reset(); // resetuje formulář
+    this.reset(); 
 });
