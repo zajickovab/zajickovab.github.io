@@ -254,7 +254,7 @@ span{
 }
 @media (max-width: 495px){
     .home-img img{
-        max-width: 60vw;
+        max-width: 65vw;
     }
 }
 @media (max-width: 600px) {
@@ -271,7 +271,7 @@ span{
     }
     .home-img img {
         margin-top: -50px;
-        max-width: 55vw;
+        max-width: 50vw;
     }
     .home-text {
         text-align: center;
@@ -329,6 +329,9 @@ span{
     .about-text {
         width: 90%;
         margin: 0 auto; 
+    }
+    .about-text p{
+        margin-bottom: -0.5rem;
     }
 }
 

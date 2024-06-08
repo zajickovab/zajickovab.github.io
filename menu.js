@@ -1,80 +1,80 @@
 const menuData = {
     "appetizers": [
         {
-            "name": "appetizer",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Bruschetta",
+            "description": "Crisp toasted bread slices topped with fresh tomatoes, basil, garlic, and a drizzle of olive oil.",
             "price": 15.00,
             "image": "images/menuphoto3.jpg"
         },
         {
-            "name": "appetizer",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Stuffed Mushrooms",
+            "description": "Savory mushrooms filled with a mixture of cream cheese, herbs, and breadcrumbs, baked to perfection.",
             "price": 15.00,
             "image": "images/menuphoto3.jpg"
         },
         {
-            "name": "appetizer",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Caprese Skewers",
+            "description": "Cherry tomatoes, fresh mozzarella, and basil leaves drizzled with balsamic glaze on skewers.",
             "price": 15.00,
             "image": "images/menuphoto3.jpg"
         }
     ],
     "main": [
         {
-            "name": "meal",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Grilled Salmon",
+            "description": "Succulent salmon fillet grilled to perfection, served with a zesty lemon-butter sauce.",
             "price": 15.00,
             "image": "images/menuphoto.jpg"
         },
         {
-            "name": "meal",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Chicken Parmesan",
+            "description": "Breaded chicken with marinara and melted mozzarella on spaghetti.",
             "price": 15.00,
             "image": "images/menuphoto.jpg"
         },
         {
-            "name": "meal",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Beef Stir-Fry",
+            "description": "Tender beef strips stir-fried with colorful vegetables in a savory soy-ginger sauce.",
             "price": 15.00,
             "image": "images/menuphoto.jpg"
         }
     ],
     "drinks": [
         {
-            "name": "drink",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Mojito",
+            "description": "A refreshing mix of white rum, mint, lime juice, sugar, and sparkling water.",
             "price": 15.00,
             "image": "images/menuphoto4.jpg"
         },
         {
-            "name": "drink",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Mango Smoothie",
+            "description": "A creamy blend of ripe mangoes, yogurt, and a splash of orange juice.",
             "price": 15.00,
             "image": "images/menuphoto4.jpg"
         },
         {
-            "name": "drink",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Iced Coffee",
+            "description": "Chilled coffee served over ice with a splash of milk and a hint of vanilla.",
             "price": 15.00,
             "image": "images/menuphoto4.jpg"
         }
     ],
     "daily-menu": [
         {
-            "name": "meal",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Grilled Chicken Salad",
+            "description": "Juicy grilled chicken breast served atop crisp mixed greens, cherry tomatoes, cucumbers, and a tangy vinaigrette dressing.",
             "price": 15.00,
             "image": "images/menuphoto2.jpg"
         },
         {
-            "name": "meal",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Spaghetti Bolognese",
+            "description": "Al dente spaghetti dressed in a hearty meat sauce of ground beef, onions, garlic, and tomatoes, finished with a sprinkle of Parmesan cheese.",
             "price": 15.00,
             "image": "images/menuphoto2.jpg"
         },
         {
-            "name": "meal",
-            "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+            "name": "Vegetable Stir-Fry:",
+            "description": "Colorful medley of fresh vegetables stir-fried to perfection in a flavorful soy-ginger sauce, served over fluffy white rice.",
             "price": 15.00,
             "image": "images/menuphoto2.jpg"
         }

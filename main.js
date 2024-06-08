@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var dailyMenuSection = document.getElementById("daily-menu");
     
-    if (currentHour >= 11 && currentHour < 14) {
+    if (currentHour >= 11 && currentHour < 15) {
     dailyMenuSection.style.display = "block";
     } else {
     dailyMenuSection.style.display = "none";
@@ -139,3 +139,4 @@ document.getElementById('reservation-form').addEventListener('submit', function(
     alert('Formulář byl úspěšně odeslán!');
     this.reset(); 
 });
+
